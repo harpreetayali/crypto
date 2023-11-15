@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeScreen.swift
 //  Crypto
 //
 //  Created by Harpreet Singh on 15/11/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeScreen: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

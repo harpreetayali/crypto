@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		100A55A62B04AB5000FB74CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100A55A52B04AB5000FB74CE /* AppDelegate.swift */; };
 		100A55A82B04AB5000FB74CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100A55A72B04AB5000FB74CE /* SceneDelegate.swift */; };
-		100A55AA2B04AB5000FB74CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100A55A92B04AB5000FB74CE /* ViewController.swift */; };
+		100A55AA2B04AB5000FB74CE /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100A55A92B04AB5000FB74CE /* HomeScreen.swift */; };
 		100A55AD2B04AB5000FB74CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 100A55AB2B04AB5000FB74CE /* Main.storyboard */; };
 		100A55AF2B04AB5100FB74CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 100A55AE2B04AB5100FB74CE /* Assets.xcassets */; };
 		100A55B22B04AB5100FB74CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 100A55B02B04AB5100FB74CE /* LaunchScreen.storyboard */; };
 		100A55BD2B04AB5100FB74CE /* CryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100A55BC2B04AB5100FB74CE /* CryptoTests.swift */; };
 		100A55C72B04AB5100FB74CE /* CryptoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100A55C62B04AB5100FB74CE /* CryptoUITests.swift */; };
 		100A55C92B04AB5100FB74CE /* CryptoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100A55C82B04AB5100FB74CE /* CryptoUITestsLaunchTests.swift */; };
+		100A55D82B04AB6E00FB74CE /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100A55D62B04AB6E00FB74CE /* APIService.swift */; };
+		100A55D92B04AB6E00FB74CE /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100A55D72B04AB6E00FB74CE /* APIEndpoints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,7 @@
 		100A55A22B04AB5000FB74CE /* Crypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		100A55A52B04AB5000FB74CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		100A55A72B04AB5000FB74CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		100A55A92B04AB5000FB74CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		100A55A92B04AB5000FB74CE /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		100A55AC2B04AB5000FB74CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		100A55AE2B04AB5100FB74CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		100A55B12B04AB5100FB74CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		100A55C22B04AB5100FB74CE /* CryptoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		100A55C62B04AB5100FB74CE /* CryptoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoUITests.swift; sourceTree = "<group>"; };
 		100A55C82B04AB5100FB74CE /* CryptoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		100A55D62B04AB6E00FB74CE /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		100A55D72B04AB6E00FB74CE /* APIEndpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +103,11 @@
 		100A55A42B04AB5000FB74CE /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
-				100A55A52B04AB5000FB74CE /* AppDelegate.swift */,
-				100A55A72B04AB5000FB74CE /* SceneDelegate.swift */,
-				100A55A92B04AB5000FB74CE /* ViewController.swift */,
-				100A55AB2B04AB5000FB74CE /* Main.storyboard */,
+				100A55DA2B04AB7300FB74CE /* Delegates */,
+				100A55D52B04AB6E00FB74CE /* API Service */,
+				100A55DC2B04AB9000FB74CE /* Storyboards */,
+				100A55DB2B04AB8400FB74CE /* ViewControllers */,
 				100A55AE2B04AB5100FB74CE /* Assets.xcassets */,
-				100A55B02B04AB5100FB74CE /* LaunchScreen.storyboard */,
 				100A55B32B04AB5100FB74CE /* Info.plist */,
 			);
 			path = Crypto;
@@ -125,6 +128,41 @@
 				100A55C82B04AB5100FB74CE /* CryptoUITestsLaunchTests.swift */,
 			);
 			path = CryptoUITests;
+			sourceTree = "<group>";
+		};
+		100A55D52B04AB6E00FB74CE /* API Service */ = {
+			isa = PBXGroup;
+			children = (
+				100A55D62B04AB6E00FB74CE /* APIService.swift */,
+				100A55D72B04AB6E00FB74CE /* APIEndpoints.swift */,
+			);
+			path = "API Service";
+			sourceTree = "<group>";
+		};
+		100A55DA2B04AB7300FB74CE /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				100A55A52B04AB5000FB74CE /* AppDelegate.swift */,
+				100A55A72B04AB5000FB74CE /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		100A55DB2B04AB8400FB74CE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				100A55A92B04AB5000FB74CE /* HomeScreen.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		100A55DC2B04AB9000FB74CE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				100A55AB2B04AB5000FB74CE /* Main.storyboard */,
+				100A55B02B04AB5100FB74CE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +296,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				100A55AA2B04AB5000FB74CE /* ViewController.swift in Sources */,
+				100A55D92B04AB6E00FB74CE /* APIEndpoints.swift in Sources */,
+				100A55AA2B04AB5000FB74CE /* HomeScreen.swift in Sources */,
 				100A55A62B04AB5000FB74CE /* AppDelegate.swift in Sources */,
+				100A55D82B04AB6E00FB74CE /* APIService.swift in Sources */,
 				100A55A82B04AB5000FB74CE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
